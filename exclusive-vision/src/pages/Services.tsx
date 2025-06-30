@@ -212,7 +212,7 @@ const Services: React.FC = () => {
             <p className="text-lg font-body text-gray-600 mb-8">
               Contact us today to discuss your specific requirements and get a customized solution
             </p>
-            <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
+            <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform">
               Request a Consultation
             </button>
           </div>

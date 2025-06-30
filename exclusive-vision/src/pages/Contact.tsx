@@ -200,7 +200,7 @@ const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-accent text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200"
+                className="w-full bg-accent text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform"
               >
                 Send Message
               </button>
@@ -242,7 +242,7 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="font-heading font-semibold text-primary mb-2">WhatsApp</h3>
                 <p className="font-body text-sm text-gray-600 mb-3">Get instant answers to your questions</p>
-                <button className="text-accent font-semibold hover:underline">Start Chat</button>
+                <button className="text-accent font-semibold hover:underline hover:scale-105 transition-all duration-200 transform">Start Chat</button>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -253,7 +253,7 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="font-heading font-semibold text-primary mb-2">Schedule Call</h3>
                 <p className="font-body text-sm text-gray-600 mb-3">Book a consultation with our experts</p>
-                <button className="text-accent font-semibold hover:underline">Book Now</button>
+                <button className="text-accent font-semibold hover:underline hover:scale-105 transition-all duration-200 transform">Book Now</button>
               </div>
             </div>
 

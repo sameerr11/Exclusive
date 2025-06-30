@@ -248,7 +248,7 @@ const Workflow: React.FC = () => {
           <p className="text-lg font-body text-gray-600 mb-8">
             Let's discuss your requirements and create a customized development plan for your success
           </p>
-          <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
+          <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform">
             Schedule a Consultation
           </button>
         </div>

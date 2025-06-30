@@ -172,7 +172,7 @@ const Industries: React.FC = () => {
                 </div>
               </div>
               <div className="bg-gradient-to-r from-primary to-accent p-4 mt-auto">
-                <button className="w-full text-white font-semibold hover:bg-white hover:bg-opacity-20 transition-colors duration-200 py-2 rounded">
+                <button className="w-full text-white font-semibold hover:bg-white hover:bg-opacity-20 hover:scale-105 transition-all duration-200 transform py-2 rounded">
                   Learn More
                 </button>
               </div>
@@ -261,10 +261,10 @@ const Industries: React.FC = () => {
               Our flexible approach allows us to adapt to any industry's specific needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
+              <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform">
                 Discuss Custom Solution
               </button>
-              <button className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white transition-colors duration-200">
+              <button className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white hover:scale-105 transition-all duration-200 transform">
                 View All Case Studies
               </button>
             </div>
