@@ -85,28 +85,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Company Stats */}
-        <div className="bg-white py-16 rounded-lg mb-16 shadow-lg">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2 text-primary">10+</div>
-              <div className="font-body text-lg text-gray-600">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2 text-primary">200+</div>
-              <div className="font-body text-lg text-gray-600">Projects Delivered</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2 text-primary">50+</div>
-              <div className="font-body text-lg text-gray-600">Happy Clients</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2 text-primary">24/7</div>
-              <div className="font-body text-lg text-gray-600">Support Available</div>
-            </div>
-          </div>
-        </div>
-
         {/* Team Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">

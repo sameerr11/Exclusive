@@ -15,12 +15,6 @@ const Certifications: React.FC = () => {
       icon: "💻"
     },
     {
-      title: "Oracle Certified Java Programmer (OCJP)",
-      category: "Programming",
-      provider: "Oracle",
-      icon: "☕"
-    },
-    {
       title: "AWS Certified Developer – Associate",
       category: "Cloud Development",
       provider: "Amazon Web Services",
@@ -75,12 +69,6 @@ const Certifications: React.FC = () => {
       icon: "🏗️"
     },
     {
-      title: "Certified Ethical Hacker (CEH)",
-      category: "Cybersecurity",
-      provider: "EC-Council",
-      icon: "🔒"
-    },
-    {
       title: "Microsoft Office Specialist (MOS)",
       category: "Productivity Tools",
       provider: "Microsoft",
@@ -111,24 +99,7 @@ const Certifications: React.FC = () => {
             Exclusive Vision is powered by a highly certified team, ensuring top-tier professionalism and global standards
           </p>
           <div className="bg-gradient-to-r from-primary to-accent text-white py-4 px-8 rounded-lg inline-block">
-            <p className="font-heading font-semibold text-lg">14+ Professional Certifications</p>
-          </div>
-        </div>
-
-        {/* Categories Overview */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-heading font-bold text-primary text-center mb-8">
-            Certification Categories
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {categories.map((category, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center">
-                <div className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2 ${category.color}`}>
-                  {category.count} Cert{category.count > 1 ? 's' : ''}
-                </div>
-                <p className="font-body font-medium text-gray-700">{category.name}</p>
-              </div>
-            ))}
+            <p className="font-heading font-semibold text-lg">12+ Professional Certifications</p>
           </div>
         </div>
 
@@ -209,19 +180,6 @@ const Certifications: React.FC = () => {
           </div>
         </div>
 
-        {/* Technology Partners */}
-        <div className="text-center">
-          <h2 className="text-3xl font-heading font-bold text-primary mb-8">
-            Certified Technology Partners
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
-            {['Microsoft', 'Amazon AWS', 'Google', 'Oracle', 'Adobe'].map((partner, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center">
-                <p className="font-body font-semibold text-gray-700">{partner}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

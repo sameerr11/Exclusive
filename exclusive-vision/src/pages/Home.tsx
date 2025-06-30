@@ -12,7 +12,7 @@ const Home: React.FC = () => {
               Exclusive Vision
             </h1>
             <p className="text-xl md:text-2xl font-body mb-8 max-w-3xl mx-auto">
-              Premier end-to-end IT solutions company redefining the digital experience across the globe
+              Where vision meets innovation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

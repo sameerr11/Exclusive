@@ -26,7 +26,7 @@ const Navigation: React.FC = () => {
               <img 
                 src="/logo.png" 
                 alt="Exclusive Vision Logo" 
-                className="h-10 w-10 mr-3 bg-white rounded-lg p-1"
+                className="h-12 w-12 mr-3 bg-white rounded-lg p-1"
               />
               <h1 className="text-white text-xl font-heading font-bold">
                 Exclusive Vision
