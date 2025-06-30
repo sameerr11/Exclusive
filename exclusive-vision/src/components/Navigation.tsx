@@ -22,7 +22,12 @@ const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0 flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Exclusive Vision Logo" 
+                className="h-10 w-10 mr-3 bg-white rounded-lg p-1"
+              />
               <h1 className="text-white text-xl font-heading font-bold">
                 Exclusive Vision
               </h1>
