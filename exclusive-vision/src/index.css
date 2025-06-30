@@ -16,3 +16,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Glacial Indifference', 'Arial', sans-serif;
 }
+
+/* Custom cursor styles */
+* {
+  cursor: none !important;
+}
+
+/* Ensure smooth transitions for custom cursor */
+html, body {
+  cursor: none;
+}
+
+/* Hide cursor on all elements */
+*, *::before, *::after {
+  cursor: none !important;
+}
