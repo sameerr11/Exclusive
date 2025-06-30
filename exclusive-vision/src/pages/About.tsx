@@ -1,65 +1,75 @@
 import React from 'react';
+import ScrollReveal from '../components/ScrollReveal';
 
 const About: React.FC = () => {
   return (
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            About Exclusive Vision
-          </h1>
-          <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Founded in Tripoli, Lebanon, we are a premier end-to-end IT solutions company 
-            redefining the digital experience across the globe.
-          </p>
-        </div>
-
-        {/* Company Story */}
-        <div className="mb-16">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-6">Our Story</h2>
-            <p className="font-body text-gray-600 text-lg leading-relaxed mb-6">
-              Founded in Tripoli, Lebanon, Exclusive Vision is a premier end-to-end IT solutions company 
-              redefining the digital experience across the globe. We specialize in delivering cutting-edge, 
-              customized, and scalable technology solutions that drive innovation and business success.
-            </p>
-            <p className="font-body text-gray-600 text-lg leading-relaxed mb-6">
-              Whether you're a startup, SME, or enterprise, Exclusive Vision empowers you to lead in your 
-              digital transformation journey. With a passionate team of developers, designers, analysts, 
-              strategists, and certified professionals, we bring technology and creativity together to build the future.
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              About Exclusive Vision
+            </h1>
+            <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
+              Founded in Tripoli, Lebanon, we are a premier end-to-end IT solutions company 
+              redefining the digital experience across the globe.
             </p>
           </div>
-        </div>
+        </ScrollReveal>
+
+        {/* Company Story */}
+        <ScrollReveal direction="left">
+          <div className="mb-16">
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl font-heading font-bold text-primary mb-6">Our Story</h2>
+              <p className="font-body text-gray-600 text-lg leading-relaxed mb-6">
+                Founded in Tripoli, Lebanon, Exclusive Vision is a premier end-to-end IT solutions company 
+                redefining the digital experience across the globe. We specialize in delivering cutting-edge, 
+                customized, and scalable technology solutions that drive innovation and business success.
+              </p>
+              <p className="font-body text-gray-600 text-lg leading-relaxed mb-6">
+                Whether you're a startup, SME, or enterprise, Exclusive Vision empowers you to lead in your 
+                digital transformation journey. With a passionate team of developers, designers, analysts, 
+                strategists, and certified professionals, we bring technology and creativity together to build the future.
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
 
         {/* Mission & Vision */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-4">Our Mission</h2>
-            <p className="font-body text-gray-600 text-lg leading-relaxed">
-              To empower businesses through excellence in digital services, leveraging innovation, 
-              certified expertise, and next-gen technologies to solve real-world challenges.
-            </p>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-4">Our Vision</h2>
-            <p className="font-body text-gray-600 text-lg leading-relaxed">
-              To be the region's most trusted IT solutions partner by delivering futuristic, 
-              intelligent, and human-centered technology solutions.
-            </p>
-          </div>
+          <ScrollReveal direction="left" delay={0.1}>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl font-heading font-bold text-primary mb-4">Our Mission</h2>
+              <p className="font-body text-gray-600 text-lg leading-relaxed">
+                To empower businesses through excellence in digital services, leveraging innovation, 
+                certified expertise, and next-gen technologies to solve real-world challenges.
+              </p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={0.2}>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl font-heading font-bold text-primary mb-4">Our Vision</h2>
+              <p className="font-body text-gray-600 text-lg leading-relaxed">
+                To be the region's most trusted IT solutions partner by delivering futuristic, 
+                intelligent, and human-centered technology solutions.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
 
         {/* Core Values Details */}
-        <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Our Core Values
-            </h2>
-            <p className="text-xl font-body max-w-2xl mx-auto">
-              The principles that guide every decision and interaction
-            </p>
-          </div>
+        <ScrollReveal>
+          <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Our Core Values
+              </h2>
+              <p className="text-xl font-body max-w-2xl mx-auto">
+                The principles that guide every decision and interaction
+              </p>
+            </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
@@ -83,18 +93,21 @@ const About: React.FC = () => {
               <p className="font-body text-sm opacity-90">Fast, flexible, and adaptive to ever-evolving demands</p>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
 
         {/* Team Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-            Our Expert Team
-          </h2>
-          <p className="text-lg font-body text-gray-600 max-w-2xl mx-auto">
-            A passionate team of developers, designers, analysts, strategists, and certified professionals 
-            bringing technology and creativity together.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+              Our Expert Team
+            </h2>
+            <p className="text-lg font-body text-gray-600 max-w-2xl mx-auto">
+              A passionate team of developers, designers, analysts, strategists, and certified professionals 
+              bringing technology and creativity together.
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">

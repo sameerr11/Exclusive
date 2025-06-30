@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Industries: React.FC = () => {
   const industries = [
@@ -128,19 +129,26 @@ const Industries: React.FC = () => {
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Industries We Serve
-          </h1>
-          <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Delivering specialized IT solutions across diverse industries with tailored expertise and innovation
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              Industries We Serve
+            </h1>
+            <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
+              Delivering specialized IT solutions across diverse industries with tailored expertise and innovation
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Industries Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {industries.map((industry, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 overflow-hidden flex flex-col h-full">
+            <ScrollReveal 
+              key={index} 
+              delay={0.1 * (index % 6)} 
+              direction={index % 3 === 0 ? 'left' : index % 3 === 1 ? 'up' : 'right'}
+            >
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 overflow-hidden flex flex-col h-full">
               <div className="p-6 flex-grow">
                 <div className="text-4xl mb-4 text-center">{industry.icon}</div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-3 text-center">
@@ -168,20 +176,22 @@ const Industries: React.FC = () => {
                   Learn More
                 </button>
               </div>
-            </div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Industry Stats */}
-        <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Our Impact
-            </h2>
-            <p className="text-xl font-body max-w-2xl mx-auto">
-              Proven results across multiple sectors and business sizes
-            </p>
-          </div>
+        <ScrollReveal>
+          <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-20">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Our Impact
+              </h2>
+              <p className="text-xl font-body max-w-2xl mx-auto">
+                Proven results across multiple sectors and business sizes
+              </p>
+            </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -201,14 +211,16 @@ const Industries: React.FC = () => {
               <div className="font-body text-lg">Support Available</div>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
 
         {/* Case Studies */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
-            Success Stories
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <ScrollReveal>
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
+              Success Stories
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {caseStudies.map((study, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
@@ -234,27 +246,30 @@ const Industries: React.FC = () => {
                 </p>
               </div>
             ))}
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Custom Solutions */}
-        <div className="text-center bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-            Don't See Your Industry?
-          </h2>
-          <p className="font-body text-gray-600 mb-6 max-w-2xl mx-auto">
-            We specialize in creating custom IT solutions for unique business requirements. 
-            Our flexible approach allows us to adapt to any industry's specific needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
-              Discuss Custom Solution
-            </button>
-            <button className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white transition-colors duration-200">
-              View All Case Studies
-            </button>
+        <ScrollReveal>
+          <div className="text-center bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-4">
+              Don't See Your Industry?
+            </h2>
+            <p className="font-body text-gray-600 mb-6 max-w-2xl mx-auto">
+              We specialize in creating custom IT solutions for unique business requirements. 
+              Our flexible approach allows us to adapt to any industry's specific needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
+                Discuss Custom Solution
+              </button>
+              <button className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white transition-colors duration-200">
+                View All Case Studies
+              </button>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   );

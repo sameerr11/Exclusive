@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Services: React.FC = () => {
   const services = [
@@ -88,19 +89,26 @@ const Services: React.FC = () => {
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Our Services
-          </h1>
-          <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Comprehensive IT solutions covering every aspect of digital transformation and business technology needs
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              Our Services
+            </h1>
+            <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
+              Comprehensive IT solutions covering every aspect of digital transformation and business technology needs
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+            <ScrollReveal 
+              key={index} 
+              delay={0.1 * (index % 8)} 
+              direction={index % 2 === 0 ? 'left' : 'right'}
+            >
+              <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
               <h3 className="text-2xl font-heading font-semibold text-primary mb-4">
                 {service.title}
               </h3>
@@ -117,20 +125,22 @@ const Services: React.FC = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Service Categories */}
-        <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Service Categories
-            </h2>
-            <p className="text-xl font-body max-w-2xl mx-auto">
-              Our expertise spans across multiple technology domains
-            </p>
-          </div>
+        <ScrollReveal>
+          <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Service Categories
+              </h2>
+              <p className="text-xl font-body max-w-2xl mx-auto">
+                Our expertise spans across multiple technology domains
+              </p>
+            </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
@@ -170,14 +180,16 @@ const Services: React.FC = () => {
               <p className="font-body text-sm opacity-90">IT Consulting, Project Management & Training</p>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
 
         {/* Technology Stack */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
-            Technologies We Master
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+        <ScrollReveal>
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
+              Technologies We Master
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
             {[
               'React', 'Node.js', 'Python', 'Swift', 'Flutter', 'Angular', 'Vue.js', 'Django',
               'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Jenkins', 'MongoDB', 'PostgreSQL',
@@ -187,21 +199,24 @@ const Services: React.FC = () => {
                 <p className="font-body font-semibold text-gray-700 text-sm">{tech}</p>
               </div>
             ))}
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* CTA Section */}
-        <div className="text-center">
-          <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg font-body text-gray-600 mb-8">
-            Contact us today to discuss your specific requirements and get a customized solution
-          </p>
-          <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
-            Request a Consultation
-          </button>
-        </div>
+        <ScrollReveal>
+          <div className="text-center">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-4">
+              Ready to Get Started?
+            </h2>
+            <p className="text-lg font-body text-gray-600 mb-8">
+              Contact us today to discuss your specific requirements and get a customized solution
+            </p>
+            <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
+              Request a Consultation
+            </button>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   );
