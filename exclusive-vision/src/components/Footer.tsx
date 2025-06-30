@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <img 
                 src="/logo.jpg" 
                 alt="Exclusive Vision Logo" 
-                className="h-28 w-40 rounded-lg bg-white p-2 mr-4"
+                className="h-30 w-36 rounded-lg bg-white p-2 mr-4"
               />
               <h3 className="text-xl font-heading font-bold">Exclusive Vision</h3>
             </div>
