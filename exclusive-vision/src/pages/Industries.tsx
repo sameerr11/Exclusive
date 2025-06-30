@@ -140,8 +140,8 @@ const Industries: React.FC = () => {
         {/* Industries Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {industries.map((industry, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 overflow-hidden">
-              <div className="p-6">
+            <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 overflow-hidden flex flex-col h-full">
+              <div className="p-6 flex-grow">
                 <div className="text-4xl mb-4 text-center">{industry.icon}</div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-3 text-center">
                   {industry.title}
@@ -163,7 +163,7 @@ const Industries: React.FC = () => {
                   </ul>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-primary to-accent p-4">
+              <div className="bg-gradient-to-r from-primary to-accent p-4 mt-auto">
                 <button className="w-full text-white font-semibold hover:bg-white hover:bg-opacity-20 transition-colors duration-200 py-2 rounded">
                   Learn More
                 </button>
