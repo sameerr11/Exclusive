@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avant+Garde:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'ITC Avant Garde Gothic', 'Avenir', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e9e8e9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Glacial Indifference', 'Arial', sans-serif;
+}
