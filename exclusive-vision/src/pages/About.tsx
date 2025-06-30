@@ -109,13 +109,39 @@ const About: React.FC = () => {
           </div>
         </ScrollReveal>
 
+        {/* Company Showcase */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <img 
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern office workspace at Exclusive Vision"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <div className="text-center">
+                <p className="font-body text-gray-600 text-sm">Our modern workspace in Tripoli, Lebanon</p>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Collaborative team meeting at Exclusive Vision"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <div className="text-center">
+                <p className="font-body text-gray-600 text-sm">Collaborative teamwork driving innovation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <div className="w-24 h-24 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+              alt="Development Team Lead"
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
             <h3 className="text-xl font-heading font-semibold text-primary mb-2">Development Team</h3>
             <p className="font-body text-accent mb-2">Full-Stack Developers</p>
             <p className="font-body text-gray-600 text-sm">
@@ -124,11 +150,11 @@ const About: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <div className="w-24 h-24 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1494790108755-2616b612b4af?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+              alt="Design Team Lead"
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
             <h3 className="text-xl font-heading font-semibold text-primary mb-2">Design Team</h3>
             <p className="font-body text-accent mb-2">UI/UX Designers</p>
             <p className="font-body text-gray-600 text-sm">
@@ -137,11 +163,11 @@ const About: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <div className="w-24 h-24 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+              alt="Strategy Team Lead"
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
             <h3 className="text-xl font-heading font-semibold text-primary mb-2">Strategy Team</h3>
             <p className="font-body text-accent mb-2">Analysts & Strategists</p>
             <p className="font-body text-gray-600 text-sm">

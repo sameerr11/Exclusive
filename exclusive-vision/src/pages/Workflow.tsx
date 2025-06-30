@@ -11,7 +11,8 @@ const Workflow: React.FC = () => {
         "Stakeholder interviews",
         "Project scope definition",
         "Timeline and budget planning"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       number: "02",
@@ -22,7 +23,8 @@ const Workflow: React.FC = () => {
         "Market research analysis",
         "Technology stack evaluation",
         "Risk assessment and mitigation"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       number: "03",
@@ -33,7 +35,8 @@ const Workflow: React.FC = () => {
         "UI/UX design and wireframes",
         "Interactive prototypes",
         "Design system creation"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       number: "04",
@@ -44,7 +47,8 @@ const Workflow: React.FC = () => {
         "Code development and reviews",
         "Continuous testing and debugging",
         "Performance optimization"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       number: "05",
@@ -55,7 +59,8 @@ const Workflow: React.FC = () => {
         "Production deployment",
         "User training and documentation",
         "Go-live support and monitoring"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       number: "06",
@@ -66,7 +71,8 @@ const Workflow: React.FC = () => {
         "Performance monitoring",
         "Feature enhancements",
         "24/7 technical support"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 
@@ -144,10 +150,17 @@ const Workflow: React.FC = () => {
                 </div>
                 
                 <div className="lg:w-1/2 flex justify-center">
-                  <div className="w-64 h-64 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <div className="text-6xl font-heading font-bold mb-2">{step.number}</div>
-                      <div className="font-body text-lg">{step.title}</div>
+                  <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                    <img 
+                      src={step.image} 
+                      alt={step.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent bg-opacity-80 flex items-center justify-center">
+                      <div className="text-white text-center">
+                        <div className="text-6xl font-heading font-bold mb-2">{step.number}</div>
+                        <div className="font-body text-lg">{step.title}</div>
+                      </div>
                     </div>
                   </div>
                 </div>

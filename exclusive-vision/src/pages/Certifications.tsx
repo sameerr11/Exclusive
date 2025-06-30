@@ -92,6 +92,13 @@ const Certifications: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Professional certifications and achievements"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
             Our Certifications
           </h1>

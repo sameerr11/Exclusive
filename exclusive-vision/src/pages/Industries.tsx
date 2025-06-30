@@ -12,7 +12,7 @@ const Industries: React.FC = () => {
         "Patient management systems",
         "Medical appointment scheduling"
       ],
-      icon: "🏥"
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Education",
@@ -23,7 +23,7 @@ const Industries: React.FC = () => {
         "Student information systems",
         "Virtual classroom solutions"
       ],
-      icon: "🎓"
+      image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Finance",
@@ -34,7 +34,7 @@ const Industries: React.FC = () => {
         "Financial dashboards",
         "Investment platforms"
       ],
-      icon: "💰"
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Retail & E-commerce",
@@ -45,7 +45,7 @@ const Industries: React.FC = () => {
         "Point of sale systems",
         "Customer loyalty programs"
       ],
-      icon: "🛍️"
+      image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Real Estate",
@@ -56,7 +56,7 @@ const Industries: React.FC = () => {
         "Real estate CRM",
         "Virtual property tours"
       ],
-      icon: "🏢"
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Manufacturing",
@@ -67,7 +67,7 @@ const Industries: React.FC = () => {
         "Quality control systems",
         "Equipment monitoring"
       ],
-      icon: "🏭"
+      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Tourism & Hospitality",
@@ -78,7 +78,7 @@ const Industries: React.FC = () => {
         "Travel planning platforms",
         "Guest experience apps"
       ],
-      icon: "✈️"
+      image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "NGOs & Government",
@@ -89,7 +89,7 @@ const Industries: React.FC = () => {
         "NGO management systems",
         "Public information systems"
       ],
-      icon: "🏛️"
+      image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       title: "Media & Entertainment",
@@ -100,7 +100,7 @@ const Industries: React.FC = () => {
         "Media production tools",
         "Digital distribution systems"
       ],
-      icon: "🎬"
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 
@@ -149,14 +149,18 @@ const Industries: React.FC = () => {
               direction={index % 3 === 0 ? 'left' : index % 3 === 1 ? 'up' : 'right'}
             >
               <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 overflow-hidden flex flex-col h-full">
-              <div className="p-6 flex-grow">
-                <div className="text-4xl mb-4 text-center">{industry.icon}</div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3 text-center">
-                  {industry.title}
-                </h3>
-                <p className="font-body text-gray-600 mb-6 leading-relaxed text-center">
-                  {industry.description}
-                </p>
+                <img 
+                  src={industry.image} 
+                  alt={industry.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6 flex-grow">
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-3 text-center">
+                    {industry.title}
+                  </h3>
+                  <p className="font-body text-gray-600 mb-6 leading-relaxed text-center">
+                    {industry.description}
+                  </p>
                 <div className="space-y-2">
                   <h4 className="font-body font-semibold text-accent mb-3">Key Solutions:</h4>
                   <ul className="space-y-1">

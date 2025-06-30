@@ -82,13 +82,24 @@ const Contact: React.FC = () => {
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Contact Us
-          </h1>
-          <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your digital journey? Get in touch with our experts to discuss your project requirements
-          </p>
+        <div className="relative text-center mb-16">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-10 rounded-lg"></div>
+          <div 
+            className="relative bg-cover bg-center bg-no-repeat py-20 rounded-lg"
+            style={{
+              backgroundImage: 'url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80")',
+              backgroundBlendMode: 'multiply'
+            }}
+          >
+            <div className="bg-black bg-opacity-50 py-12 px-8 rounded-lg">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
+                Contact Us
+              </h1>
+              <p className="text-xl font-body text-white max-w-3xl mx-auto">
+                Ready to transform your digital journey? Get in touch with our experts to discuss your project requirements
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
