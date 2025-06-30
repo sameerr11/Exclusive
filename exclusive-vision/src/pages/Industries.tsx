@@ -3,91 +3,124 @@ import React from 'react';
 const Industries: React.FC = () => {
   const industries = [
     {
-      title: "Manufacturing & Automotive",
-      description: "Quality control, assembly line inspection, and automated defect detection systems.",
+      title: "Healthcare",
+      description: "Digital health solutions, telemedicine platforms, and healthcare management systems.",
       applications: [
-        "Production line monitoring",
-        "Quality assurance",
-        "Defect detection",
-        "Parts identification"
-      ],
-      icon: "🏭"
-    },
-    {
-      title: "Healthcare & Medical",
-      description: "Medical imaging, diagnostic systems, and pharmaceutical quality control solutions.",
-      applications: [
-        "Medical imaging analysis",
-        "Diagnostic assistance",
-        "Pharmaceutical inspection",
-        "Laboratory automation"
+        "Telemedicine platforms",
+        "Electronic health records",
+        "Patient management systems",
+        "Medical appointment scheduling"
       ],
       icon: "🏥"
     },
     {
-      title: "Food & Beverage",
-      description: "Food safety inspection, packaging quality control, and contamination detection.",
+      title: "Education",
+      description: "Learning management systems, educational platforms, and digital learning tools.",
       applications: [
-        "Food safety inspection",
-        "Packaging verification",
-        "Contamination detection",
-        "Label verification"
+        "Learning management systems",
+        "Online course platforms",
+        "Student information systems",
+        "Virtual classroom solutions"
       ],
-      icon: "🍽️"
+      icon: "🎓"
     },
     {
-      title: "Electronics & Technology",
-      description: "PCB inspection, component verification, and semiconductor quality control.",
+      title: "Finance",
+      description: "Fintech solutions, banking applications, and financial management systems.",
       applications: [
-        "PCB inspection",
-        "Component verification",
-        "Soldering quality",
-        "Circuit testing"
+        "Banking applications",
+        "Payment processing systems",
+        "Financial dashboards",
+        "Investment platforms"
       ],
-      icon: "💻"
+      icon: "💰"
     },
     {
-      title: "Aerospace & Defense",
-      description: "Critical component inspection, safety systems, and precision measurement.",
+      title: "Retail & E-commerce",
+      description: "Complete e-commerce platforms, inventory management, and retail solutions.",
       applications: [
-        "Component inspection",
-        "Safety verification",
-        "Precision measurement",
-        "Material analysis"
+        "E-commerce portals",
+        "Inventory management",
+        "Point of sale systems",
+        "Customer loyalty programs"
+      ],
+      icon: "🛍️"
+    },
+    {
+      title: "Real Estate",
+      description: "Property management systems, real estate platforms, and CRM solutions.",
+      applications: [
+        "Property listing platforms",
+        "Property management systems",
+        "Real estate CRM",
+        "Virtual property tours"
+      ],
+      icon: "🏢"
+    },
+    {
+      title: "Manufacturing",
+      description: "Industrial automation, supply chain management, and production optimization systems.",
+      applications: [
+        "Production management",
+        "Supply chain optimization",
+        "Quality control systems",
+        "Equipment monitoring"
+      ],
+      icon: "🏭"
+    },
+    {
+      title: "Tourism & Hospitality",
+      description: "Booking systems, hotel management, and travel platform solutions.",
+      applications: [
+        "Hotel booking systems",
+        "Restaurant management",
+        "Travel planning platforms",
+        "Guest experience apps"
       ],
       icon: "✈️"
     },
     {
-      title: "Pharmaceutical & Life Sciences",
-      description: "Drug manufacturing quality control, packaging verification, and compliance monitoring.",
+      title: "NGOs & Government",
+      description: "Public sector solutions, citizen services, and non-profit management systems.",
       applications: [
-        "Drug quality control",
-        "Packaging inspection",
-        "Batch verification",
-        "Compliance monitoring"
+        "Citizen service portals",
+        "Government databases",
+        "NGO management systems",
+        "Public information systems"
       ],
-      icon: "💊"
+      icon: "🏛️"
+    },
+    {
+      title: "Media & Entertainment",
+      description: "Content management systems, streaming platforms, and media production tools.",
+      applications: [
+        "Content management platforms",
+        "Streaming solutions",
+        "Media production tools",
+        "Digital distribution systems"
+      ],
+      icon: "🎬"
     }
   ];
 
   const caseStudies = [
     {
-      industry: "Automotive",
-      challenge: "Reduce defect rates in transmission assembly",
-      solution: "Implemented computer vision system for real-time inspection",
-      result: "75% reduction in defect rates, 40% faster inspection times"
+      industry: "Healthcare",
+      challenge: "Create HIPAA-compliant telemedicine platform",
+      solution: "Built secure, cloud-based telemedicine solution with video consultations",
+      result: "Served 15,000+ patients, 98% user satisfaction rate"
     },
     {
-      industry: "Electronics",
-      challenge: "Improve PCB soldering quality control",
-      solution: "Deployed AI-powered visual inspection system",
-      result: "99.7% accuracy in defect detection, 60% cost reduction"
+      industry: "E-commerce",
+      challenge: "Build scalable multi-vendor marketplace",
+      solution: "Developed comprehensive e-commerce platform with vendor management",
+      result: "300% increase in sales, 50% faster checkout process"
     },
     {
-      industry: "Pharmaceutical",
-      challenge: "Ensure packaging compliance and quality",
-      solution: "Integrated vision system with production line",
-      result: "100% compliance verification, zero recall incidents"
+      industry: "Education",
+      challenge: "Develop interactive learning management system",
+      solution: "Created LMS with video conferencing, assessments, and progress tracking",
+      result: "40% improvement in student engagement, 60% faster grading"
     }
   ];
 
@@ -100,7 +133,7 @@ const Industries: React.FC = () => {
             Industries We Serve
           </h1>
           <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Delivering specialized vision solutions across diverse industries with tailored expertise
+            Delivering specialized IT solutions across diverse industries with tailored expertise and innovation
           </p>
         </div>
 
@@ -117,7 +150,7 @@ const Industries: React.FC = () => {
                   {industry.description}
                 </p>
                 <div className="space-y-2">
-                  <h4 className="font-body font-semibold text-accent mb-3">Key Applications:</h4>
+                  <h4 className="font-body font-semibold text-accent mb-3">Key Solutions:</h4>
                   <ul className="space-y-1">
                     {industry.applications.map((app, appIndex) => (
                       <li key={appIndex} className="flex items-center font-body text-sm text-gray-700">
@@ -143,29 +176,29 @@ const Industries: React.FC = () => {
         <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Industry Impact
+              Our Impact
             </h2>
             <p className="text-xl font-body max-w-2xl mx-auto">
-              Proven results across multiple sectors
+              Proven results across multiple sectors and business sizes
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">25+</div>
+              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">9+</div>
               <div className="font-body text-lg">Industries Served</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">99.5%</div>
-              <div className="font-body text-lg">Average Accuracy</div>
+              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">200+</div>
+              <div className="font-body text-lg">Projects Delivered</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">60%</div>
-              <div className="font-body text-lg">Cost Reduction</div>
+              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">50+</div>
+              <div className="font-body text-lg">Happy Clients</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-heading font-bold mb-2">24/7</div>
-              <div className="font-body text-lg">Operation Support</div>
+              <div className="font-body text-lg">Support Available</div>
             </div>
           </div>
         </div>
@@ -210,8 +243,8 @@ const Industries: React.FC = () => {
             Don't See Your Industry?
           </h2>
           <p className="font-body text-gray-600 mb-6 max-w-2xl mx-auto">
-            We specialize in creating custom vision solutions for unique industry requirements. 
-            Our flexible approach allows us to adapt to any sector's specific needs.
+            We specialize in creating custom IT solutions for unique business requirements. 
+            Our flexible approach allows us to adapt to any industry's specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">

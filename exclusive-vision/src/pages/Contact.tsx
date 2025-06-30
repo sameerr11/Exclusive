@@ -25,12 +25,12 @@ const Contact: React.FC = () => {
   };
 
   const industries = [
-    'Manufacturing & Automotive',
-    'Healthcare & Medical',
-    'Food & Beverage',
-    'Electronics & Technology',
-    'Aerospace & Defense',
-    'Pharmaceutical & Life Sciences',
+    'E-commerce & Retail',
+    'Healthcare & Telemedicine',
+    'Education & E-learning',
+    'Financial Services',
+    'Real Estate',
+    'Startups & SMEs',
     'Other'
   ];
 
@@ -42,8 +42,8 @@ const Contact: React.FC = () => {
         </svg>
       ),
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      subContent: 'Mon-Fri 8AM-6PM EST'
+      content: '+961 6 XXX XXX',
+      subContent: 'Mon-Fri 9AM-6PM (Lebanon Time)'
     },
     {
       icon: (
@@ -63,8 +63,8 @@ const Contact: React.FC = () => {
         </svg>
       ),
       title: 'Address',
-      content: '123 Innovation Drive',
-      subContent: 'Tech City, TC 12345'
+      content: 'Tripoli, Lebanon',
+      subContent: 'North Lebanon'
     },
     {
       icon: (
@@ -73,8 +73,8 @@ const Contact: React.FC = () => {
         </svg>
       ),
       title: 'Business Hours',
-      content: 'Monday - Friday: 8AM - 6PM',
-      subContent: 'Emergency support available 24/7'
+      content: 'Monday - Friday: 9AM - 6PM',
+      subContent: 'Lebanon Time (GMT+2/+3)'
     }
   ];
 
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
             Contact Us
           </h1>
           <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your vision? Get in touch with our experts to discuss your project requirements
+            Ready to transform your digital journey? Get in touch with our experts to discuss your project requirements
           </p>
         </div>
 
@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-accent focus:border-accent transition-colors duration-200"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+961 XX XXX XXX"
                   />
                 </div>
               </div>
@@ -214,7 +214,7 @@ const Contact: React.FC = () => {
                 Get in Touch
               </h2>
               <p className="font-body mb-6 opacity-90">
-                We're here to help you bring your vision to life. Contact us through any of the following channels:
+                We're here to help you bring your digital vision to life. Contact us through any of the following channels:
               </p>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
@@ -240,7 +240,7 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                 </div>
-                <h3 className="font-heading font-semibold text-primary mb-2">Live Chat</h3>
+                <h3 className="font-heading font-semibold text-primary mb-2">WhatsApp</h3>
                 <p className="font-body text-sm text-gray-600 mb-3">Get instant answers to your questions</p>
                 <button className="text-accent font-semibold hover:underline">Start Chat</button>
               </div>
@@ -257,17 +257,26 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Emergency Contact */}
-            <div className="bg-red-50 border border-red-200 p-6 rounded-lg">
-              <h3 className="font-heading font-semibold text-red-800 mb-2">Emergency Support</h3>
-              <p className="font-body text-red-700 text-sm mb-3">
-                For urgent technical issues or critical system failures
+            {/* Office Hours */}
+            <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+              <h3 className="font-heading font-semibold text-blue-800 mb-2">Office Hours</h3>
+              <p className="font-body text-blue-700 text-sm mb-3">
+                Our team is available during regular business hours
               </p>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span className="font-body font-semibold text-red-800">+1 (555) 911-HELP</span>
+              <div className="space-y-1 text-sm">
+                <div className="flex justify-between">
+                  <span className="font-body font-medium text-blue-800">Monday - Friday:</span>
+                  <span className="font-body text-blue-700">9:00 AM - 6:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-body font-medium text-blue-800">Saturday:</span>
+                  <span className="font-body text-blue-700">10:00 AM - 2:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-body font-medium text-blue-800">Sunday:</span>
+                  <span className="font-body text-blue-700">Closed</span>
+                </div>
+                <p className="font-body text-xs text-blue-600 mt-2">(Lebanon Time - GMT+2/+3)</p>
               </div>
             </div>
           </div>

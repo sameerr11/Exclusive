@@ -4,57 +4,68 @@ const Workflow: React.FC = () => {
   const steps = [
     {
       number: "01",
-      title: "Discovery & Analysis",
-      description: "We begin with a comprehensive assessment of your requirements, current systems, and objectives.",
+      title: "Requirement Gathering",
+      description: "We begin by understanding your business needs, goals, and specific requirements through detailed consultation.",
       details: [
-        "Requirements gathering",
-        "System analysis",
-        "Feasibility study",
-        "ROI assessment"
+        "Understand business needs",
+        "Stakeholder interviews",
+        "Project scope definition",
+        "Timeline and budget planning"
       ]
     },
     {
       number: "02",
-      title: "Design & Planning",
-      description: "Our experts develop a customized solution architecture tailored to your specific needs.",
+      title: "Research & Analysis",
+      description: "Comprehensive research and analysis focusing on technical feasibility and user-centric design approach.",
       details: [
-        "Solution architecture",
-        "Technical specifications",
-        "Project timeline",
-        "Resource allocation"
+        "Technical & user-centric feasibility",
+        "Market research analysis",
+        "Technology stack evaluation",
+        "Risk assessment and mitigation"
       ]
     },
     {
       number: "03",
-      title: "Development & Testing",
-      description: "We implement the solution using industry best practices and rigorous testing protocols.",
+      title: "Design & Prototyping",
+      description: "Creating visual and functional layouts that align with your brand and user experience requirements.",
       details: [
-        "Software development",
-        "Hardware integration",
-        "Quality assurance",
-        "Performance optimization"
+        "Visual and functional layout",
+        "UI/UX design and wireframes",
+        "Interactive prototypes",
+        "Design system creation"
       ]
     },
     {
       number: "04",
-      title: "Installation & Integration",
-      description: "Professional deployment and seamless integration with your existing infrastructure.",
+      title: "Development & Testing",
+      description: "Implementation using agile sprints with continuous quality assurance and testing cycles.",
       details: [
-        "System installation",
-        "Configuration setup",
-        "Integration testing",
-        "User training"
+        "Agile sprints and QA cycles",
+        "Code development and reviews",
+        "Continuous testing and debugging",
+        "Performance optimization"
       ]
     },
     {
       number: "05",
-      title: "Support & Maintenance",
-      description: "Ongoing support to ensure optimal performance and continuous improvement.",
+      title: "Deployment & Training",
+      description: "Smooth launch process with comprehensive client enablement and user training programs.",
       details: [
-        "24/7 monitoring",
-        "Regular maintenance",
-        "Performance tuning",
-        "Feature updates"
+        "Smooth launch and client enablement",
+        "Production deployment",
+        "User training and documentation",
+        "Go-live support and monitoring"
+      ]
+    },
+    {
+      number: "06",
+      title: "Support & Optimization",
+      description: "Ongoing maintenance, updates, and continuous improvement to ensure optimal performance.",
+      details: [
+        "Ongoing maintenance & upgrades",
+        "Performance monitoring",
+        "Feature enhancements",
+        "24/7 technical support"
       ]
     }
   ];
@@ -62,23 +73,23 @@ const Workflow: React.FC = () => {
   const methodologies = [
     {
       title: "Agile Development",
-      description: "Iterative approach ensuring flexibility and rapid delivery",
+      description: "Iterative approach with regular client feedback and flexible adaptation",
       icon: "🔄"
     },
     {
-      title: "DevOps Integration",
-      description: "Continuous integration and deployment for faster time-to-market",
-      icon: "⚙️"
+      title: "User-Centric Design",
+      description: "Focus on user experience and human-centered design principles",
+      icon: "👤"
     },
     {
       title: "Quality Assurance",
-      description: "Rigorous testing at every stage to ensure reliability",
+      description: "Comprehensive testing at every stage to ensure reliability",
       icon: "✅"
     },
     {
-      title: "Risk Management",
-      description: "Proactive identification and mitigation of potential issues",
-      icon: "🛡️"
+      title: "Client Collaboration",
+      description: "Regular communication and transparency throughout the project",
+      icon: "🤝"
     }
   ];
 
@@ -91,14 +102,14 @@ const Workflow: React.FC = () => {
             Our Workflow
           </h1>
           <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
-            A proven methodology that ensures successful project delivery and exceptional results
+            A comprehensive 6-step process that ensures successful project delivery and exceptional results for every client
           </p>
         </div>
 
         {/* Process Steps */}
         <div className="mb-20">
           <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
-            Project Delivery Process
+            Our 6-Step Process
           </h2>
           
           <div className="space-y-12">
@@ -149,10 +160,10 @@ const Workflow: React.FC = () => {
         <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Our Methodologies
+              Our Development Philosophy
             </h2>
             <p className="text-xl font-body max-w-2xl mx-auto">
-              Industry-proven approaches that drive success
+              Principles that guide our approach to every project
             </p>
           </div>
 
@@ -183,14 +194,24 @@ const Workflow: React.FC = () => {
                   <span className="text-white font-heading font-bold">1-2</span>
                 </div>
                 <p className="font-body font-semibold text-primary">Weeks</p>
-                <p className="font-body text-sm text-gray-600">Discovery & Design</p>
+                <p className="font-body text-sm text-gray-600">Requirement & Research</p>
               </div>
               
               <div className="hidden md:block flex-1 h-0.5 bg-accent mx-4"></div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-white font-heading font-bold">4-8</span>
+                  <span className="text-white font-heading font-bold">2-3</span>
+                </div>
+                <p className="font-body font-semibold text-primary">Weeks</p>
+                <p className="font-body text-sm text-gray-600">Design & Prototyping</p>
+              </div>
+              
+              <div className="hidden md:block flex-1 h-0.5 bg-accent mx-4"></div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-white font-heading font-bold">6-12</span>
                 </div>
                 <p className="font-body font-semibold text-primary">Weeks</p>
                 <p className="font-body text-sm text-gray-600">Development & Testing</p>
@@ -213,7 +234,7 @@ const Workflow: React.FC = () => {
                   <span className="text-white font-heading font-bold">∞</span>
                 </div>
                 <p className="font-body font-semibold text-primary">Ongoing</p>
-                <p className="font-body text-sm text-gray-600">Support & Maintenance</p>
+                <p className="font-body text-sm text-gray-600">Support & Optimization</p>
               </div>
             </div>
           </div>
@@ -225,7 +246,7 @@ const Workflow: React.FC = () => {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg font-body text-gray-600 mb-8">
-            Let's discuss your requirements and create a customized workflow for your success
+            Let's discuss your requirements and create a customized development plan for your success
           </p>
           <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200">
             Schedule a Consultation
