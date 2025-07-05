@@ -63,7 +63,7 @@ const About: React.FC = () => {
               />
               <div className="relative py-16 px-8">
                 <motion.h1 
-                  className="text-5xl md:text-7xl font-heading font-bold text-primary mb-8"
+                  className="text-4xl md:text-5xl font-heading font-bold text-primary mb-8"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
@@ -146,7 +146,7 @@ const About: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
           </div>
         </ScrollReveal>
 
@@ -263,7 +263,7 @@ const About: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                       </svg>
                     </motion.div>
-                    <h2 className="text-4xl font-heading font-bold text-primary mb-6">Remote-First Approach</h2>
+                    <h2 className="text-3xl font-heading font-bold text-primary mb-6">Remote-First Approach</h2>
                   </motion.div>
                   <motion.p 
                     className="font-body text-gray-600 text-lg leading-relaxed text-center max-w-5xl mx-auto"
@@ -290,7 +290,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6 relative z-10">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6 relative z-10">
                   Our Expert Team
                 </h2>
                 <motion.div
@@ -381,7 +381,7 @@ const About: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={team.icon} />
                       </svg>
                     </motion.div>
-                    <h3 className="text-xl font-heading font-semibold text-primary mb-2 text-center">
+                    <h3 className="text-lg font-heading font-semibold text-primary mb-2 text-center">
                       {team.title}
                     </h3>
                     <p className="font-body text-accent mb-4 text-center font-semibold">
