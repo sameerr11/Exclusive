@@ -7,97 +7,97 @@ const Services: React.FC = () => {
       title: "Website Development",
       description: "Comprehensive web solutions from static sites to complex e-commerce platforms.",
       features: ["Static & dynamic websites", "E-commerce platforms", "CMS (WordPress, Joomla, Drupal)", "SEO-friendly architecture"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "iOS Development",
       description: "Native iOS applications with full Apple ecosystem compatibility.",
       features: ["Native Swift development", "iPad & Apple Watch compatibility", "App Store publishing & compliance", "iOS-specific optimizations"],
-      image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Digital Marketing",
       description: "Complete digital marketing solutions to boost your online presence.",
       features: ["SEO & SEM", "Pay-Per-Click (PPC) Campaigns", "Email Marketing Automation", "Content Marketing & Blogging"],
-      image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "AI-Powered Solutions",
       description: "Cutting-edge AI integration to automate and enhance business processes.",
       features: ["AI-powered chatbots", "Predictive analytics", "NLP & machine learning integration", "Custom AI tools for automation"],
-      image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Mobile App Development",
       description: "Cross-platform and native mobile applications for all business needs.",
       features: ["Android app development", "Cross-platform apps (Flutter, React Native)", "Enterprise mobility solutions", "Mobile app optimization"],
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "UI/UX Design",
       description: "Human-centered design solutions that deliver exceptional user experiences.",
       features: ["Wireframing & prototyping", "Responsive design for all platforms", "Human-centric product design", "Figma, Adobe XD, Sketch"],
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Social Media Management",
       description: "Strategic social media solutions to build and engage your community.",
       features: ["Strategy & planning", "Creatives & branding", "Community engagement", "Analytics & reporting"],
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Custom Software Development",
       description: "Tailored software solutions built specifically for your business requirements.",
       features: ["CRM, ERP, and HRM systems", "Desktop software solutions", "SaaS product development", "Agile development methodologies"],
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Cloud Computing Services",
       description: "Comprehensive cloud solutions for scalable and secure infrastructure.",
       features: ["Cloud migration & setup (AWS, Azure, GCP)", "Serverless architecture", "Cloud security & DevOps", "Infrastructure management"],
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Cybersecurity Solutions",
       description: "Robust security measures to protect your digital assets and data.",
       features: ["Vulnerability assessments", "Endpoint security", "Network monitoring", "Compliance audits (ISO 27001, GDPR)"],
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "E-Commerce Solutions",
       description: "Complete e-commerce platforms with integrated payment and logistics systems.",
       features: ["Custom e-commerce portals", "Shopify, Magento, WooCommerce", "Payment gateway integration", "Inventory & logistics automation"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "IT Training & Certifications",
       description: "Professional training programs for individuals and corporate teams.",
       features: ["Tailored training for corporates and individuals", "Microsoft Office, Adobe, and Dev tools", "Online & in-person bootcamps", "Certification programs"],
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Data Analytics & BI",
       description: "Transform your data into actionable insights with advanced analytics solutions.",
       features: ["Power BI, Tableau dashboarding", "Data warehousing", "Real-time reporting solutions", "Advanced analytics & KPIs"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "DevOps & Infrastructure",
       description: "Streamlined development operations for faster and more reliable deployments.",
       features: ["CI/CD pipelines", "Docker, Kubernetes, Jenkins", "Cloud-native infrastructure management", "Automated deployment solutions"],
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "IT Consulting & Project Management",
       description: "Strategic IT guidance and expert project management for digital transformation.",
       features: ["Digital transformation strategy", "Agile & Scrum-based project leadership", "Vendor management", "Technical documentation"],
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Blockchain Development",
       description: "Innovative blockchain solutions for decentralized applications and smart contracts.",
       features: ["Smart contracts", "Decentralized apps (dApps)", "Wallet development", "Blockchain integration"],
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 

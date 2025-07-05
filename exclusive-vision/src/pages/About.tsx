@@ -61,42 +61,7 @@ const About: React.FC = () => {
           </ScrollReveal>
         </div>
 
-        {/* Core Values Details */}
-        <ScrollReveal>
-          <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Our Core Values
-              </h2>
-              <p className="text-xl font-body max-w-2xl mx-auto">
-                The principles that guide every decision and interaction
-              </p>
-            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <h3 className="text-xl font-heading font-bold mb-3">Innovation First</h3>
-              <p className="font-body text-sm opacity-90">We lead with creativity and the latest technologies</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-heading font-bold mb-3">Integrity & Trust</h3>
-              <p className="font-body text-sm opacity-90">Transparent and honest relationships with clients</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-heading font-bold mb-3">Excellence</h3>
-              <p className="font-body text-sm opacity-90">World-class quality in every line of code and pixel</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-heading font-bold mb-3">Customer-Centricity</h3>
-              <p className="font-body text-sm opacity-90">Solutions built for your business goals</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-heading font-bold mb-3">Agility</h3>
-              <p className="font-body text-sm opacity-90">Fast, flexible, and adaptive to ever-evolving demands</p>
-            </div>
-          </div>
-          </div>
-        </ScrollReveal>
 
         {/* Team Section */}
         <ScrollReveal>

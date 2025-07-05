@@ -203,7 +203,7 @@ const Industries: React.FC = () => {
               <div className="font-body text-lg">Industries Served</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">200+</div>
+              <div className="text-4xl md:text-5xl font-heading font-bold mb-2">50+</div>
               <div className="font-body text-lg">Projects Delivered</div>
             </div>
             <div>
