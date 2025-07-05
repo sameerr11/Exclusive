@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
 
 const Industries: React.FC = () => {
+  const navigate = useNavigate();
+
   const industries = [
     {
       title: "Healthcare",
@@ -104,26 +107,7 @@ const Industries: React.FC = () => {
     }
   ];
 
-  const caseStudies = [
-    {
-      industry: "Healthcare",
-      challenge: "Create HIPAA-compliant telemedicine platform",
-      solution: "Built secure, cloud-based telemedicine solution with video consultations",
-      result: "Served 15,000+ patients, 98% user satisfaction rate"
-    },
-    {
-      industry: "E-commerce",
-      challenge: "Build scalable multi-vendor marketplace",
-      solution: "Developed comprehensive e-commerce platform with vendor management",
-      result: "300% increase in sales, 50% faster checkout process"
-    },
-    {
-      industry: "Education",
-      challenge: "Develop interactive learning management system",
-      solution: "Created LMS with video conferencing, assessments, and progress tracking",
-      result: "40% improvement in student engagement, 60% faster grading"
-    }
-  ];
+
 
   return (
     <div className="py-16">
@@ -176,7 +160,10 @@ const Industries: React.FC = () => {
                 </div>
               </div>
               <div className="bg-gradient-to-r from-primary to-accent p-4 mt-auto">
-                <button className="w-full text-white font-semibold hover:bg-white hover:bg-opacity-20 hover:scale-105 transition-all duration-200 transform py-2 rounded">
+                <button 
+                  onClick={() => navigate('/contact')}
+                  className="w-full text-white font-semibold hover:bg-white hover:bg-opacity-20 hover:scale-105 transition-all duration-200 transform py-2 rounded cursor-pointer"
+                >
                   Learn More
                 </button>
               </div>
@@ -218,41 +205,7 @@ const Industries: React.FC = () => {
           </div>
         </ScrollReveal>
 
-        {/* Case Studies */}
-        <ScrollReveal>
-          <div className="mb-16">
-            <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">
-              Success Stories
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
-                  {study.industry}
-                </div>
-                <h3 className="text-lg font-heading font-semibold text-primary mb-3">
-                  Challenge
-                </h3>
-                <p className="font-body text-gray-600 text-sm mb-4">
-                  {study.challenge}
-                </p>
-                <h3 className="text-lg font-heading font-semibold text-primary mb-3">
-                  Solution
-                </h3>
-                <p className="font-body text-gray-600 text-sm mb-4">
-                  {study.solution}
-                </p>
-                <h3 className="text-lg font-heading font-semibold text-primary mb-3">
-                  Result
-                </h3>
-                <p className="font-body text-accent font-semibold text-sm">
-                  {study.result}
-                </p>
-              </div>
-            ))}
-            </div>
-          </div>
-        </ScrollReveal>
+
 
         {/* Custom Solutions */}
         <ScrollReveal>
@@ -264,12 +217,12 @@ const Industries: React.FC = () => {
               We specialize in creating custom IT solutions for unique business requirements. 
               Our flexible approach allows us to adapt to any industry's specific needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform">
+            <div className="flex justify-center">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:scale-105 transition-all duration-200 transform cursor-pointer"
+              >
                 Discuss Custom Solution
-              </button>
-              <button className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white hover:scale-105 transition-all duration-200 transform">
-                View All Case Studies
               </button>
             </div>
           </div>
