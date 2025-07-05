@@ -153,58 +153,7 @@ const Services: React.FC = () => {
           ))}
         </div>
 
-        {/* Service Categories */}
-        <ScrollReveal>
-          <div className="bg-gradient-to-r from-primary to-accent text-white py-16 rounded-lg mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Service Categories
-              </h2>
-              <p className="text-xl font-body max-w-2xl mx-auto">
-                Our expertise spans across multiple technology domains
-              </p>
-            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <h3 className="text-lg font-heading font-semibold mb-2">Development</h3>
-              <p className="font-body text-sm opacity-90">Web, Mobile, Software & Custom Solutions</p>
-            </div>
-            <div>
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-                </svg>
-              </div>
-              <h3 className="text-lg font-heading font-semibold mb-2">Cloud & Infrastructure</h3>
-              <p className="font-body text-sm opacity-90">Cloud Migration, DevOps & Security</p>
-            </div>
-            <div>
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.25l1.41-1.41L16.16 14.5 15 15.66l-1.75-1.75L12 15.16l1.41 1.41L16.16 20l3.75-3.75z"/>
-                </svg>
-              </div>
-              <h3 className="text-lg font-heading font-semibold mb-2">Analytics & AI</h3>
-              <p className="font-body text-sm opacity-90">Data Analytics, BI & AI Solutions</p>
-            </div>
-            <div>
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
-              </div>
-              <h3 className="text-lg font-heading font-semibold mb-2">Consulting & Training</h3>
-              <p className="font-body text-sm opacity-90">IT Consulting, Project Management & Training</p>
-            </div>
-          </div>
-          </div>
-        </ScrollReveal>
 
         {/* Technology Stack */}
         <ScrollReveal>
