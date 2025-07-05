@@ -235,21 +235,21 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <ScrollReveal delay={0.1}>
               <div className="text-center">
-                <AnimatedCounter end={150} suffix="+" />
+                <AnimatedCounter end={50} suffix="+" />
                 <p className="text-lg font-body text-gray-600 mt-2">Projects Completed</p>
               </div>
             </ScrollReveal>
             
             <ScrollReveal delay={0.2}>
               <div className="text-center">
-                <AnimatedCounter end={98} suffix="%" />
+                <AnimatedCounter end={100} suffix="%" />
                 <p className="text-lg font-body text-gray-600 mt-2">Client Satisfaction</p>
               </div>
             </ScrollReveal>
             
             <ScrollReveal delay={0.3}>
               <div className="text-center">
-                <AnimatedCounter end={50} suffix="+" />
+                <AnimatedCounter end={20} suffix="+" />
                 <p className="text-lg font-body text-gray-600 mt-2">Team Members</p>
               </div>
             </ScrollReveal>
