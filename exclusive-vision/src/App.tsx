@@ -10,6 +10,7 @@ import Certifications from './pages/Certifications';
 import Workflow from './pages/Workflow';
 import Industries from './pages/Industries';
 import Contact from './pages/Contact';
+import EvErp from './pages/EvErp';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function AnimatedRoutes() {
         <Route path="/workflow" element={<PageTransition><Workflow /></PageTransition>} />
         <Route path="/industries" element={<PageTransition><Industries /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+        <Route path="/everp" element={<PageTransition><EvErp /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

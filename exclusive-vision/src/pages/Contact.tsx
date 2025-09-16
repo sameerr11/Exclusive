@@ -381,44 +381,7 @@ const Contact: React.FC = () => {
                 </div>
               </ScrollReveal>
 
-              {/* Quick Actions */}
-              <ScrollReveal delay={0.3}>
-                <div className="grid grid-cols-1 gap-4">
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="bg-white p-6 rounded-xl shadow-lg border border-gray-100"
-                  >
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h3 className="font-heading font-semibold text-primary mb-1">Response Time</h3>
-                        <p className="font-body text-sm text-gray-600">Within 24 hours</p>
-                      </div>
-                      <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </motion.div>
-
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="bg-white p-6 rounded-xl shadow-lg border border-gray-100"
-                  >
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h3 className="font-heading font-semibold text-primary mb-1">Free Consultation</h3>
-                        <p className="font-body text-sm text-gray-600">No commitment required</p>
-                      </div>
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-              </ScrollReveal>
+              {/* Quick Actions removed per request */}
 
               {/* Office Hours */}
               <ScrollReveal delay={0.4}>

@@ -13,6 +13,7 @@ const Navigation: React.FC = () => {
     { name: 'Workflow', path: '/workflow' },
     { name: 'Industries', path: '/industries' },
     { name: 'Contact', path: '/contact' },
+    { name: 'EV ERP', path: '/everp' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
