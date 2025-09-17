@@ -14,7 +14,7 @@ const EvErp: React.FC = () => {
 
   return (
     <div className="relative min-h-[calc(100vh-8rem)] flex items-center justify-center px-4 py-14 md:py-20">
-      <div className="w-full max-w-md rounded-2xl shadow-2xl p-8 border border-white/10 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div className="w-full max-w-md rounded-2xl shadow-2xl p-8 border border-white/10 bg-primary">
         <h2 className="text-2xl font-bold text-white text-center mb-2">EV ERP</h2>
         <p className="text-white/70 text-center mb-8">Sign in to your account</p>
 
