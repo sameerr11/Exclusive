@@ -44,17 +44,8 @@ const EvCs: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              EV CS
+              EV Clinic System
             </motion.h1>
-            
-            <motion.p 
-              className="text-2xl md:text-3xl font-heading font-semibold text-accent mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Clinic System
-            </motion.p>
             
             <motion.p 
               className="text-lg font-body text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -151,7 +142,7 @@ const EvCs: React.FC = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  Experience the power of EV CS and revolutionize your healthcare management.
+                  Experience the power of EV Clinic System and revolutionize your healthcare management.
                 </motion.p>
 
                 <motion.a
@@ -166,7 +157,7 @@ const EvCs: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Access EV CS →
+                  Access EV Clinic System →
                 </motion.a>
               </div>
             </div>
