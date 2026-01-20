@@ -7,16 +7,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-primary text-white relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
+          <div>
             <div className="flex items-center mb-6">
               <img 
                 src="/logo.jpg" 
                 alt="Exclusive Vision Logo" 
-                className="h-30 w-36 rounded-lg bg-white p-2 mr-4"
+                className="h-30 w-36 rounded-lg bg-white p-2"
               />
-              <h3 className="text-xl font-heading font-bold">Exclusive Vision</h3>
             </div>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-white transition-colors duration-200" aria-label="Facebook">
@@ -64,6 +63,33 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/industries" className="text-gray-300 hover:text-accent transition-colors duration-200">
                   Industries
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* EV Products */}
+          <div>
+            <h4 className="text-lg font-heading font-semibold mb-4">EV Products</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/everp" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV ERP
+                </Link>
+              </li>
+              <li>
+                <Link to="/ev-sms" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV Sports System
+                </Link>
+              </li>
+              <li>
+                <Link to="/ev-cs" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV Clinic System
+                </Link>
+              </li>
+              <li>
+                <Link to="/ev-tc" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV Training Center
                 </Link>
               </li>
             </ul>
