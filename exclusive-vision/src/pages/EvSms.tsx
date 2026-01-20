@@ -1,0 +1,208 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import ScrollReveal from '../components/ScrollReveal';
+
+const EvSms: React.FC = () => {
+  return (
+    <div className="relative min-h-[calc(100vh-8rem)] py-16 overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <motion.div
+          className="absolute top-20 right-10 w-40 h-40 bg-accent/10 rounded-full"
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 left-10 w-32 h-32 bg-primary/10 rounded-full"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <motion.div
+              className="inline-block mb-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </motion.div>
+            
+            <motion.h1 
+              className="text-4xl md:text-6xl font-heading font-bold text-primary mb-6"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              EV SMS
+            </motion.h1>
+            
+            <motion.p 
+              className="text-2xl md:text-3xl font-heading font-semibold text-accent mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Sports Management System
+            </motion.p>
+            
+            <motion.p 
+              className="text-lg font-body text-gray-600 max-w-3xl mx-auto leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              Comprehensive sports management solution designed to streamline operations, manage teams, 
+              track performance, and enhance the overall sports experience.
+            </motion.p>
+          </div>
+        </ScrollReveal>
+
+        {/* Features Section */}
+        <ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+                title: "Team Management",
+                description: "Efficiently manage teams, players, and coaching staff with advanced organizational tools."
+              },
+              {
+                icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+                title: "Performance Tracking",
+                description: "Monitor and analyze player performance with detailed statistics and insights."
+              },
+              {
+                icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
+                title: "Scheduling & Events",
+                description: "Organize matches, practices, and events with an intuitive calendar system."
+              }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -5 }}
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={feature.icon} />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-primary mb-3">
+                  {feature.title}
+                </h3>
+                <p className="font-body text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </ScrollReveal>
+
+        {/* CTA Section */}
+        <ScrollReveal>
+          <div className="relative">
+            <div className="bg-gradient-to-br from-primary to-accent text-white py-16 rounded-3xl shadow-2xl overflow-hidden">
+              <motion.div
+                className="absolute inset-0 opacity-10"
+                animate={{
+                  backgroundPosition: ['0% 0%', '100% 100%'],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+                style={{
+                  backgroundImage: 'linear-gradient(45deg, #fff 25%, transparent 25%), linear-gradient(-45deg, #fff 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #fff 75%), linear-gradient(-45deg, transparent 75%, #fff 75%)',
+                  backgroundSize: '20px 20px',
+                }}
+              />
+              
+              <div className="relative z-10 text-center px-8">
+                <motion.h2 
+                  className="text-3xl md:text-4xl font-heading font-bold mb-6"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                >
+                  Ready to Transform Your Sports Management?
+                </motion.h2>
+                
+                <motion.p 
+                  className="text-xl font-body mb-10 max-w-2xl mx-auto opacity-90"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 0.9, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                  Experience the power of EV SMS and streamline your sports operations today.
+                </motion.p>
+
+                <motion.a
+                  href="https://ev-sms.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white text-primary px-10 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Access EV SMS →
+                </motion.a>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Back to Products */}
+        <ScrollReveal>
+          <div className="text-center mt-12">
+            <Link
+              to="/"
+              className="inline-flex items-center text-accent hover:text-primary font-semibold transition-colors duration-200"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Home
+            </Link>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  );
+};
+
+export default EvSms;

@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -13,10 +15,33 @@ const Navigation: React.FC = () => {
     { name: 'Workflow', path: '/workflow' },
     { name: 'Industries', path: '/industries' },
     { name: 'Contact', path: '/contact' },
+  ];
+
+  const evProductsItems = [
     { name: 'EV ERP', path: '/everp' },
+    { name: 'EV SMS', path: '/ev-sms', description: 'Sports Management System' },
+    { name: 'EV CS', path: '/ev-cs', description: 'Clinic System' },
+    { name: 'EV TC', path: '/ev-tc', description: 'Training Centre' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <nav className="bg-primary shadow-lg fixed w-full z-50">
@@ -50,6 +75,48 @@ const Navigation: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* EV Products Dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className={`px-4 py-2.5 rounded-lg text-base font-semibold transition-all duration-200 flex items-center ${
+                  evProductsItems.some(item => isActive(item.path))
+                    ? 'text-accent bg-white bg-opacity-15 shadow-sm'
+                    : 'text-white hover:text-accent hover:bg-white hover:bg-opacity-10 hover:scale-105'
+                }`}
+              >
+                EV Products
+                <svg
+                  className={`ml-2 w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 z-50 border border-gray-100">
+                  {evProductsItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      onClick={() => setIsDropdownOpen(false)}
+                      className={`block px-4 py-2 text-sm font-semibold transition-colors duration-200 ${
+                        isActive(item.path)
+                          ? 'text-accent bg-primary bg-opacity-5'
+                          : 'text-primary hover:text-accent hover:bg-gray-50'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -87,6 +154,29 @@ const Navigation: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* EV Products in Mobile */}
+              <div>
+                <div className="px-4 py-3 text-base font-semibold text-white">
+                  EV Products
+                </div>
+                <div className="pl-6 space-y-1">
+                  {evProductsItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
+                        isActive(item.path)
+                          ? 'text-accent bg-white bg-opacity-15'
+                          : 'text-white text-opacity-80 hover:text-accent hover:bg-white hover:bg-opacity-10'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
