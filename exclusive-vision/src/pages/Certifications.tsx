@@ -80,16 +80,6 @@ const Certifications: React.FC = () => {
     }
   ];
 
-  const categories = [
-    { name: "Cloud Development", count: 2, color: "bg-blue-100 text-blue-800" },
-    { name: "Software Development", count: 1, color: "bg-green-100 text-green-800" },
-    { name: "Mobile Development", count: 2, color: "bg-purple-100 text-purple-800" },
-    { name: "Design & Creative", count: 4, color: "bg-pink-100 text-pink-800" },
-    { name: "Digital Marketing", count: 1, color: "bg-yellow-100 text-yellow-800" },
-    { name: "Cloud Architecture", count: 1, color: "bg-indigo-100 text-indigo-800" },
-    { name: "Cybersecurity", count: 1, color: "bg-red-100 text-red-800" },
-    { name: "Productivity Tools", count: 1, color: "bg-gray-100 text-gray-800" }
-  ];
 
   return (
     <div className="relative overflow-hidden">
