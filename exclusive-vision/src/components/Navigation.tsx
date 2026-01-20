@@ -21,7 +21,7 @@ const Navigation: React.FC = () => {
     { name: 'EV ERP', path: '/everp' },
     { name: 'EV Sports System', path: '/ev-sms', description: 'Sports Management System' },
     { name: 'EV Clinic System', path: '/ev-cs', description: 'Clinic System' },
-    { name: 'EV Training Centre', path: '/ev-tc', description: 'Training Centre' },
+    { name: 'EV Training Center', path: '/ev-tc', description: 'Training Center' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
