@@ -18,10 +18,10 @@ const Navigation: React.FC = () => {
   ];
 
   const evProductsItems = [
-    { name: 'EV ERP', path: '/everp' },
-    { name: 'EV Sports System', path: '/ev-sms', description: 'Sports Management System' },
-    { name: 'EV Clinic System', path: '/ev-cs', description: 'Clinic System' },
-    { name: 'EV Training Center', path: '/ev-tc', description: 'Training Center' },
+    { name: 'EV ERP System', path: '/everp' },
+    { name: 'EV Sports Management System', path: '/ev-sms', description: 'Sports Management System' },
+    { name: 'EV Clinic Management System', path: '/ev-cs', description: 'Clinic System' },
+    { name: 'VR Educational Training Center', path: '/ev-tc', description: 'Training Center' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

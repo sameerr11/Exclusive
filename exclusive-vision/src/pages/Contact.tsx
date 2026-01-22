@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
         </svg>
       ),
       title: 'Phone',
-      content: '+961 6 XXX XXX',
+      content: '+961 3 117 496',
       subContent: 'Mon-Fri 9AM-6PM (Lebanon Time)'
     },
     {

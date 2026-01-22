@@ -74,22 +74,22 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/everp" className="text-gray-300 hover:text-accent transition-colors duration-200">
-                  EV ERP
+                  EV ERP System
                 </Link>
               </li>
               <li>
                 <Link to="/ev-sms" className="text-gray-300 hover:text-accent transition-colors duration-200">
-                  EV Sports System
+                  EV Sports Management System
                 </Link>
               </li>
               <li>
                 <Link to="/ev-cs" className="text-gray-300 hover:text-accent transition-colors duration-200">
-                  EV Clinic System
+                  EV Clinic Management System
                 </Link>
               </li>
               <li>
                 <Link to="/ev-tc" className="text-gray-300 hover:text-accent transition-colors duration-200">
-                  EV Training Center
+                  VR Educational Training Center
                 </Link>
               </li>
             </ul>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                 <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                 </svg>
-                +961 6 XXX XXX
+                +961 3 117 496
               </li>
             </ul>
           </div>
