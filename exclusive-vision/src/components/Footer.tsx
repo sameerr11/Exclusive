@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/ev-tc" className="text-gray-300 hover:text-accent transition-colors duration-200">
-                  VR Educational Training Center
+                  EV Educational Training Center
                 </Link>
               </li>
             </ul>
