@@ -22,6 +22,8 @@ const Navigation: React.FC = () => {
     { name: 'EV Sports Management System', path: '/ev-sms', description: 'Sports Management System' },
     { name: 'EV Clinic Management System', path: '/ev-cs', description: 'Clinic System' },
     { name: 'EV Educational Training Center', path: '/ev-tc', description: 'Training Center' },
+    { name: 'EV Document Management System', path: '/ev-dms', description: 'Document Management' },
+    { name: 'EV Ticket Support System', path: '/ev-tss', description: 'Ticket Support' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -99,7 +101,7 @@ const Navigation: React.FC = () => {
 
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 z-50 border border-gray-100">
+                <div className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-50 border border-gray-100">
                   {evProductsItems.map((item) => (
                     <Link
                       key={item.name}

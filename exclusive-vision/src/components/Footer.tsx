@@ -92,6 +92,16 @@ const Footer: React.FC = () => {
                   EV Educational Training Center
                 </Link>
               </li>
+              <li>
+                <Link to="/ev-dms" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV Document Management System
+                </Link>
+              </li>
+              <li>
+                <Link to="/ev-tss" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  EV Ticket Support System
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -14,6 +14,8 @@ import EvErp from './pages/EvErp';
 import EvSms from './pages/EvSms';
 import EvCs from './pages/EvCs';
 import EvTc from './pages/EvTc';
+import EvDms from './pages/EvDms';
+import EvTss from './pages/EvTss';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -32,6 +34,8 @@ function AnimatedRoutes() {
         <Route path="/ev-sms" element={<PageTransition><EvSms /></PageTransition>} />
         <Route path="/ev-cs" element={<PageTransition><EvCs /></PageTransition>} />
         <Route path="/ev-tc" element={<PageTransition><EvTc /></PageTransition>} />
+        <Route path="/ev-dms" element={<PageTransition><EvDms /></PageTransition>} />
+        <Route path="/ev-tss" element={<PageTransition><EvTss /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
