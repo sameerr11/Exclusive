@@ -164,8 +164,8 @@ const Services: React.FC = () => {
               'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Jenkins', 'MongoDB', 'PostgreSQL',
               'Shopify', 'Magento', 'WordPress', 'Drupal', 'Power BI', 'Tableau', 'Figma', 'Adobe XD'
             ].map((tech, index) => (
-              <div key={index} className="bg-blue-50 p-4 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform border border-blue-200">
-                <p className="font-body font-semibold text-blue-800 text-sm">{tech}</p>
+              <div key={index} className="bg-accent/10 p-4 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform border border-accent/30">
+                <p className="font-body font-semibold text-primary text-sm">{tech}</p>
               </div>
             ))}
             </div>

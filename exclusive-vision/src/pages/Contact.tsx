@@ -385,8 +385,8 @@ const Contact: React.FC = () => {
 
               {/* Office Hours */}
               <ScrollReveal delay={0.4}>
-                <div className="bg-blue-50 border border-blue-200 p-6 rounded-xl">
-                  <h3 className="font-heading font-semibold text-blue-800 mb-4 flex items-center">
+                <div className="bg-accent/10 border border-accent/30 p-6 rounded-xl">
+                  <h3 className="font-heading font-semibold text-primary mb-4 flex items-center">
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -394,18 +394,18 @@ const Contact: React.FC = () => {
                   </h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="font-body font-medium text-blue-800">Monday - Friday:</span>
-                      <span className="font-body text-blue-700">9:00 AM - 6:00 PM</span>
+                      <span className="font-body font-medium text-primary">Monday - Friday:</span>
+                      <span className="font-body text-primary/80">9:00 AM - 6:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="font-body font-medium text-blue-800">Saturday:</span>
-                      <span className="font-body text-blue-700">10:00 AM - 2:00 PM</span>
+                      <span className="font-body font-medium text-primary">Saturday:</span>
+                      <span className="font-body text-primary/80">10:00 AM - 2:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="font-body font-medium text-blue-800">Sunday:</span>
-                      <span className="font-body text-blue-700">Closed</span>
+                      <span className="font-body font-medium text-primary">Sunday:</span>
+                      <span className="font-body text-primary/80">Closed</span>
                     </div>
-                    <p className="font-body text-xs text-blue-600 mt-3 text-center">
+                    <p className="font-body text-xs text-primary/70 mt-3 text-center">
                       Lebanon Time (GMT+2/+3)
                     </p>
                   </div>
