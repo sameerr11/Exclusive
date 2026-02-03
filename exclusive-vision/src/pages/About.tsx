@@ -1,79 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
-import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
+import ElegantHero from '../components/ElegantHero';
 
 const About: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <motion.div
-          className="absolute top-20 right-10 w-32 h-32 bg-accent/10 rounded-full"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 left-10 w-24 h-24 bg-primary/10 rounded-full"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            y: [0, -20, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent/5 rounded-full"
-          animate={{
-            x: [0, 30, 0],
-            y: [0, -30, 0],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      </div>
-
       {/* Hero Section */}
-      <AnimatedHeroBackground pattern="cross" fullHeight={true}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-            >
-              <span className="text-white text-sm font-semibold">Remote-First IT Solutions</span>
-            </motion.div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-              About Exclusive Vision
-            </h1>
-
-            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              We are a premier end-to-end IT solutions company redefining the digital experience 
-              across the globe with our remote-first approach and global expertise.
-            </p>
-          </motion.div>
-        </div>
-      </AnimatedHeroBackground>
+      <ElegantHero
+        badge="Remote-First IT Solutions"
+        title="About Exclusive Vision"
+        description="We are a premier end-to-end IT solutions company redefining the digital experience across the globe with our remote-first approach and global expertise."
+      />
 
       <div className="relative z-10 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

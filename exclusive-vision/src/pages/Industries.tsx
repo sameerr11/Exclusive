@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
-import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
+import ElegantHero from '../components/ElegantHero';
 
 const Industries: React.FC = () => {
   const navigate = useNavigate();
@@ -114,32 +113,11 @@ const Industries: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Hero Section */}
-      <AnimatedHeroBackground pattern="waves" fullHeight={true}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-            >
-              <span className="text-white text-sm font-semibold">9+ Industries Served</span>
-            </motion.div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-              Industries We Serve
-            </h1>
-
-            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Delivering specialized IT solutions across diverse industries with tailored expertise and innovation
-            </p>
-          </motion.div>
-        </div>
-      </AnimatedHeroBackground>
+      <ElegantHero
+        badge="9+ Industries Served"
+        title="Industries We Serve"
+        description="Delivering specialized IT solutions across diverse industries with tailored expertise and innovation"
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
 

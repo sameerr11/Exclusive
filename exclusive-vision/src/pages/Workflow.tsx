@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
-import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
+import ElegantHero from '../components/ElegantHero';
 
 const Workflow: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -149,32 +149,11 @@ const Workflow: React.FC = () => {
 
       <div className="relative z-10">
           {/* Enhanced Hero Section */}
-          <AnimatedHeroBackground pattern="grid" fullHeight={true}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-center"
-              >
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-                >
-                  <span className="text-white text-sm font-semibold">6-Step Process</span>
-                </motion.div>
-
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-                  Our Workflow
-                </h1>
-
-                <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-                  A comprehensive process that ensures successful project delivery and exceptional results for every client
-                </p>
-              </motion.div>
-            </div>
-        </AnimatedHeroBackground>
+          <ElegantHero
+            badge="6-Step Process"
+            title="Our Workflow"
+            description="A comprehensive process that ensures successful project delivery and exceptional results for every client"
+          />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           {/* Enhanced Process Steps */}

@@ -1,7 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
-import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
+import ElegantHero from '../components/ElegantHero';
 
 const Services: React.FC = () => {
   const services = [
@@ -106,32 +105,11 @@ const Services: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Hero Section */}
-      <AnimatedHeroBackground pattern="diagonal" fullHeight={true}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-            >
-              <span className="text-white text-sm font-semibold">16+ Comprehensive Services</span>
-            </motion.div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-              Our Services
-            </h1>
-
-            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Comprehensive IT solutions covering every aspect of digital transformation and business technology needs
-            </p>
-          </motion.div>
-        </div>
-      </AnimatedHeroBackground>
+      <ElegantHero
+        badge="16+ Comprehensive Services"
+        title="Our Services"
+        description="Comprehensive IT solutions covering every aspect of digital transformation and business technology needs"
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
 
