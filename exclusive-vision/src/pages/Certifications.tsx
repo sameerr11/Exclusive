@@ -129,92 +129,52 @@ const Certifications: React.FC = () => {
       <div className="py-16 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Enhanced Hero Section */}
-          <ScrollReveal>
-            <div className="text-center mb-24">
-              <motion.div 
-                className="mb-12 relative group"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8 }}
-              >
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-2xl"
-                  animate={{
-                    rotate: [0, 1, -1, 0],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Professional certifications and achievements"
-                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                  />
-                </div>
-              </motion.div>
+          <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24 mb-16 rounded-3xl">
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute inset-0" style={{
+                backgroundImage: `
+                  radial-gradient(circle at 15px 15px, white 3px, transparent 3px),
+                  radial-gradient(circle at 45px 45px, white 2px, transparent 2px)
+                `,
+                backgroundSize: '60px 60px'
+              }} />
+            </div>
+            <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
 
-                             <motion.h1 
-                 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-8 relative"
-                 initial={{ opacity: 0, y: 30 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.8, delay: 0.3 }}
-               >
-                Our Certifications
-                <motion.div
-                  className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-accent rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: 128 }}
-                  transition={{ duration: 1, delay: 1 }}
-                />
-              </motion.h1>
-
-              <motion.p 
-                className="text-xl font-body text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                Exclusive Vision is powered by a highly certified team, ensuring top-tier professionalism and global standards
-              </motion.p>
-
-              <motion.div 
-                className="relative inline-block"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
-                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.8 }}
+                className="text-center"
               >
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl"
-                  animate={{
-                    boxShadow: [
-                      "0 0 20px rgba(36, 37, 109, 0.3)",
-                      "0 0 40px rgba(138, 175, 206, 0.4)",
-                      "0 0 20px rgba(36, 37, 109, 0.3)"
-                    ]
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                <div className="relative bg-gradient-to-r from-primary to-accent text-white py-6 px-12 rounded-2xl">
-                  <p className="font-heading font-semibold text-xl">12+ Professional Certifications</p>
-                </div>
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
+                >
+                  <span className="text-white text-sm font-semibold">Certified Excellence</span>
+                </motion.div>
+
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
+                  Our Certifications
+                </h1>
+
+                <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+                  Exclusive Vision is powered by a highly certified team, ensuring top-tier professionalism and global standards
+                </p>
+
+                <motion.div 
+                  className="inline-block bg-white/20 backdrop-blur-sm text-white py-4 px-8 rounded-2xl"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p className="font-heading font-semibold text-2xl">12+ Professional Certifications</p>
+                </motion.div>
               </motion.div>
             </div>
-          </ScrollReveal>
+          </section>
 
           {/* Enhanced Certifications Grid */}
           <ScrollReveal>

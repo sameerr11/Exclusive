@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
 
@@ -110,19 +111,49 @@ const Industries: React.FC = () => {
 
 
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero Section */}
-        <ScrollReveal>
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+    <div className="relative overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24 mb-16">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              repeating-linear-gradient(60deg, white 0px, white 2px, transparent 2px, transparent 15px),
+              repeating-linear-gradient(120deg, white 0px, white 2px, transparent 2px, transparent 15px),
+              repeating-linear-gradient(180deg, white 0px, white 2px, transparent 2px, transparent 15px)
+            `,
+            backgroundSize: '30px 50px'
+          }} />
+        </div>
+        <div className="absolute top-0 right-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
+            >
+              <span className="text-white text-sm font-semibold">9+ Industries Served</span>
+            </motion.div>
+
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
               Industries We Serve
             </h1>
-            <p className="text-xl font-body text-gray-600 max-w-3xl mx-auto">
+
+            <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
               Delivering specialized IT solutions across diverse industries with tailored expertise and innovation
             </p>
-          </div>
-        </ScrollReveal>
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Industries Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
