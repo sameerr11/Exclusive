@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import ProductHero from '../components/ProductHero';
 
 const EvTc: React.FC = () => {
   const features = [
@@ -40,83 +41,15 @@ const EvTc: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              radial-gradient(circle at 20px 20px, white 2px, transparent 2px),
-              radial-gradient(circle at 60px 60px, white 1px, transparent 1px)
-            `,
-            backgroundSize: '80px 80px'
-          }} />
-        </div>
-        <div className="absolute top-0 left-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl transform -translate-x-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-              >
-                <span className="text-white text-sm font-semibold">Educational Training Platform</span>
-              </motion.div>
-
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-                EV Training Center
-              </h1>
-
-              <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-                Master new skills with expert-led courses, live training sessions, and industry certifications.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <motion.a
-                  href="https://evtc-demo.exclusivevision.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Explore Courses
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </motion.a>
-
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                <img
-                  src="/EV TRAINING CENTER.PNG"
-                  alt="EV Training Center"
-                  className="w-full h-auto"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <ProductHero
+        badge="Educational Training Platform"
+        title="EV Training Center"
+        description="Master new skills with expert-led courses, live training sessions, and industry certifications."
+        demoLink="https://evtc-demo.exclusivevision.com"
+        image="/EV TRAINING CENTER.PNG"
+        imageAlt="EV Training Center"
+        pattern="dots"
+      />
 
       {/* Features Section */}
       <section className="py-16 md:py-24">

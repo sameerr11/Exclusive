@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import ProductHero from '../components/ProductHero';
 
 const EvSms: React.FC = () => {
   const features = [
@@ -40,83 +41,15 @@ const EvSms: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(45deg, white 1px, transparent 1px),
-              linear-gradient(-45deg, white 1px, transparent 1px)
-            `,
-            backgroundSize: '30px 30px'
-          }} />
-        </div>
-        <div className="absolute top-10 right-10 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-              >
-                <span className="text-white text-sm font-semibold">Sports Management Platform</span>
-              </motion.div>
-
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-                EV Sports Management
-              </h1>
-
-              <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-                The ultimate platform for managing sports organizations, teams, players, and tournaments with real-time analytics.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <motion.a
-                  href="https://ev-sms.onrender.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Try Demo
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </motion.a>
-
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                <img
-                  src="/EV SPORTS SYSTEM .png"
-                  alt="EV Sports Management System"
-                  className="w-full h-auto"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <ProductHero
+        badge="Sports Management Platform"
+        title="EV Sports Management"
+        description="The ultimate platform for managing sports organizations, teams, players, and tournaments with real-time analytics."
+        demoLink="https://ev-sms.onrender.com/"
+        image="/EV SPORTS SYSTEM .png"
+        imageAlt="EV Sports Management System"
+        pattern="diagonal"
+      />
 
       {/* Features Section */}
       <section className="py-16 md:py-24">

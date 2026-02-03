@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
 
 const Workflow: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -146,23 +147,10 @@ const Workflow: React.FC = () => {
         </div>
       )}
 
-      <div className="py-16 relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10">
           {/* Enhanced Hero Section */}
-          <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24 mb-16 rounded-3xl">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `
-                  linear-gradient(0deg, transparent 48%, white 48%, white 52%, transparent 52%),
-                  linear-gradient(90deg, transparent 48%, white 48%, white 52%, transparent 52%)
-                `,
-                backgroundSize: '50px 50px'
-              }} />
-            </div>
-            <div className="absolute top-1/3 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedHeroBackground pattern="grid" fullHeight={true}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -186,8 +174,9 @@ const Workflow: React.FC = () => {
                 </p>
               </motion.div>
             </div>
-          </section>
+        </AnimatedHeroBackground>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           {/* Enhanced Process Steps */}
           <ScrollReveal>
             <div className="mb-24">

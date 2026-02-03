@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
 
 const Industries: React.FC = () => {
   const navigate = useNavigate();
@@ -113,21 +114,8 @@ const Industries: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24 mb-16">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              repeating-linear-gradient(60deg, white 0px, white 2px, transparent 2px, transparent 15px),
-              repeating-linear-gradient(120deg, white 0px, white 2px, transparent 2px, transparent 15px),
-              repeating-linear-gradient(180deg, white 0px, white 2px, transparent 2px, transparent 15px)
-            `,
-            backgroundSize: '30px 50px'
-          }} />
-        </div>
-        <div className="absolute top-0 right-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimatedHeroBackground pattern="waves" fullHeight={true}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -151,9 +139,9 @@ const Industries: React.FC = () => {
             </p>
           </motion.div>
         </div>
-      </section>
+      </AnimatedHeroBackground>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
 
         {/* Industries Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">

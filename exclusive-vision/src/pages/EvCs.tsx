@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import ProductHero from '../components/ProductHero';
 
 const EvCs: React.FC = () => {
   const features = [
@@ -40,83 +41,15 @@ const EvCs: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              repeating-linear-gradient(0deg, white 0px, white 1px, transparent 1px, transparent 40px),
-              repeating-linear-gradient(90deg, white 0px, white 1px, transparent 1px, transparent 40px)
-            `,
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
-        <div className="absolute top-1/4 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full"
-              >
-                <span className="text-white text-sm font-semibold">Healthcare Management Platform</span>
-              </motion.div>
-
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6">
-                EV Clinic System
-              </h1>
-
-              <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-                Next-generation clinic management with seamless workflows and unparalleled patient care.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <motion.a
-                  href="https://evcs-demo.exclusivevision.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Experience Demo
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </motion.a>
-
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all"
-                >
-                  Schedule Consultation
-                </Link>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                <img
-                  src="/EV CS.jpeg"
-                  alt="EV Clinic System"
-                  className="w-full h-auto"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <ProductHero
+        badge="Healthcare Management Platform"
+        title="EV Clinic System"
+        description="Next-generation clinic management with seamless workflows and unparalleled patient care."
+        demoLink="https://evcs-demo.exclusivevision.com"
+        image="/EV CS.jpeg"
+        imageAlt="EV Clinic System"
+        pattern="cross"
+      />
 
       {/* Features Section */}
       <section className="py-16 md:py-24">

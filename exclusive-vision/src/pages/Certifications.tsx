@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
+import AnimatedHeroBackground from '../components/AnimatedHeroBackground';
 
 const Certifications: React.FC = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -126,23 +127,10 @@ const Certifications: React.FC = () => {
         />
       </div>
 
-      <div className="py-16 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Enhanced Hero Section */}
-          <section className="relative bg-gradient-to-br from-primary to-accent overflow-hidden py-16 md:py-24 mb-16 rounded-3xl">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `
-                  radial-gradient(circle at 15px 15px, white 3px, transparent 3px),
-                  radial-gradient(circle at 45px 45px, white 2px, transparent 2px)
-                `,
-                backgroundSize: '60px 60px'
-              }} />
-            </div>
-            <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10">
+        {/* Enhanced Hero Section */}
+        <AnimatedHeroBackground pattern="dots" fullHeight={true}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -174,8 +162,9 @@ const Certifications: React.FC = () => {
                 </motion.div>
               </motion.div>
             </div>
-          </section>
+        </AnimatedHeroBackground>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           {/* Enhanced Certifications Grid */}
           <ScrollReveal>
             <div className="mb-24">
