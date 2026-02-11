@@ -75,11 +75,11 @@ interface ElegantHeroProps {
     description?: string;
 }
 
-const ElegantHero: React.FC<ElegantHeroProps> = ({ 
-    badge, 
-    title, 
+const ElegantHero: React.FC<ElegantHeroProps> = ({
+    badge,
+    title,
     subtitle,
-    description 
+    description
 }) => {
     const fadeUpVariants = {
         hidden: { opacity: 0, y: 30 },
@@ -166,7 +166,7 @@ const ElegantHero: React.FC<ElegantHeroProps> = ({
                         initial="hidden"
                         animate="visible"
                     >
-                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
                             <span
                                 className={cn(
                                     "bg-clip-text text-transparent bg-gradient-to-r from-accent via-white/95 to-[#a8c8e8]"
